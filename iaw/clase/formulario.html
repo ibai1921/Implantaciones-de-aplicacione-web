@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>
+    Ejemplo de ejercicio sin formulario.
+    Ejemplos.
+    Ibai
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estiloejercicio.css" title="Color">
+</head>
+
+
+
+
+<body>
+
+    <form action="respuestas.php" method="POST">
+
+        <!--Para introducir texto-->
+        <p></p><label for="nombre">Nombre </label><input type="text" name="nombre"></p>
+
+        <!--Chekbox-->
+        <p><input type="checkbox" name="aceptar"><label 
+        for="aceptar">Acepto los terminos</label></p>
+
+        <!--radio button-->
+
+        <p>Ciclos: </p>
+        <p><input type="radio" name="ciclos" values="ASIR"><label
+        for="ciclos">Administradcion de sistemas informaticos y redes</label></p>
+        <p><input type="radio" name="ciclos" values="DAM"><label
+        for="ciclos">Desarrollo aplicaciones multiplataforma</label></p>
+        <p><input type="radio" name="ciclos" values="DAW"><label
+        for="ciclos">Desarrollo aplicaciones web</label></p>
+       
+
+        <!--Menú desplegable-->
+        <p><label for="Intereses">Intereses</label></p>
+            <select name="Intereses">
+                <option>Música</option>
+                <option>Jugar</option>
+                <option>Videojuegos</option>
+            </select></p>
+    <!--Menú desplegable  []=mas de una opcion-->
+    <p><label for="Intereses2[]">Intereses</label></p>
+     <select name="Intereses2[]" size="3" multiple>
+    <option>Música</option>
+    <option>Jugar</option>
+    <option>Videojuegos</option>
+    </select></p>
+
+    <!--Elemento oculto-->
+    <input type="hidden" name="id" value="5454">
+
+    <!--imagen-->
+    <input type="image" name="dados" src="../ejercicios/img/dados/1.svg">
+    <p><input type="submit" name="enviar" value="enviar"></p>    
+
+    </form>
+    
+
+    </body>
+  </table>
+
+  <footer>
+   
+  </footer>
+</body>
+</html>
